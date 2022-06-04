@@ -1,0 +1,37 @@
+
+<h1 mat-dialog-title>About Stella Cat</h1>
+<div mat-dialog-content style="display: flex; flex-direction: column;">
+  <div>
+    <span style="display: flex; align-items: center; flex-direction: row; justify-content: space-between;">
+      <span>
+        Invited on Monday, July 22
+      </span>
+      <button mat-stroked-button>
+        Resend Invite
+      </button>
+    </span>
+  </div>
+  <form style="display: flex; flex-direction: column;">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Full Name" value="Stella Cat">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Email" value="stella@uptick.om">
+    </mat-form-field>
+
+    <mat-form-field>
+  <mat-label>Manager</mat-label>
+    <select matNativeControl required>
+      <option value="volvo">Michael Probert</option>
+      <option value="saab">Britta Probert</option>
+      <option value="mercedes">Alek Paskewitz</option>
+    </select>
+  </mat-form-field>
+
+  </form>
+</div>
+<div mat-dialog-actions style="justify-content: flex-end;">
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button color="primary" [mat-dialog-close]="data.animal" cdkFocusInitial>Save</button>
+</div>

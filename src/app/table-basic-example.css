@@ -1,0 +1,28 @@
+table {
+  width: 100%;
+}
+
+/* Column Widths */
+.mat-column-status,
+.mat-column-manager,
+.mat-column-actions {
+  min-width: 56px;
+  max-width: 88px;
+  text-align: center;
+}
+
+.mat-column-actions {
+  width: 44px;
+}
+
+/* MatList Overrides */
+
+.mat-list,
+.mat-list-item-content {
+  padding: 0px !important;
+}
+
+/* Mat Form Field Overrides */
+.mat-form-field {
+  width: 100%;
+}
